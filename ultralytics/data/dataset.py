@@ -93,6 +93,7 @@ class YOLODataset(BaseDataset):
                     repeat(self.prefix),
                     repeat(self.use_keypoints),
                     repeat(len(self.data["names"])),
+                    #repeat(4),
                     repeat(nkpt),
                     repeat(ndim),
                 ),

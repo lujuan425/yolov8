@@ -6,7 +6,9 @@ from pathlib import Path
 
 import torch
 import torch.nn as nn
-
+# 在 ultralytics/nn/tasks.py 开头添加
+from ultralytics.nn.modules.CBAM import CBAM  # 导入CBAM类
+from ultralytics.nn.modules.SEnet import SEnet
 from ultralytics.nn.modules import (
     AIFI,
     C1,
